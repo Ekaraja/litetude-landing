@@ -1,0 +1,35 @@
+.hiw__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    border: 2px solid black;
+}
+
+.hiw__card {
+    max-width: 395px;
+    padding: 86px 40px;
+    /* background-color: #FFFFFF; */
+    background: rgb(184, 181, 181);
+    backdrop-filter: blur(1px);
+    border-radius: 33px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+.hiw__card::before {
+    content: "";
+    transform: skew(9deg, 3deg);
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
+    /* transform: matrix(0.87,-0.5,0,0.87,0,1); */
+    border-radius: 2.5rem 1.5rem;
+    background: rgba(64, 64, 64, 0.2);
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    z-index: -2;
+}

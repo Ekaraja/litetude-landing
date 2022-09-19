@@ -1,0 +1,17 @@
+.home__page {
+    display: flex;
+    width: 100%;
+    /* border: 3px solid green; */
+    overflow: auto;
+}
+
+.left {
+    /* border: 3px solid blue; */
+}
+
+.right {
+    width: 100%;
+    /* border: 3px solid orange; */
+}
+
+

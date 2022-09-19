@@ -1,0 +1,26 @@
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card__image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card__desc {
+    background: rgb(200, 192, 192);
+}

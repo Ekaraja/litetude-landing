@@ -1,0 +1,16 @@
+.story__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content {
+    max-width: 35%;
+}
+
+.content p {
+    font-size: 22px;
+    line-height: 32px;
+    color: #696B6B;
+    margin-top: 1em;
+}

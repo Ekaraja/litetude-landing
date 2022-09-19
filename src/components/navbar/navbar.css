@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.nav__left {
+    display: flex;
+}
+
+.nav__right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__buttons {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.donate__btn {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    background: #001EF4;
+    border: 1px solid #0080BF;
+    box-shadow: 0px 16px 78px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+    padding: 12px 40px;
+}
+
+.register__btn {
+    border: none;
+    background: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #0080BF;  
+}
