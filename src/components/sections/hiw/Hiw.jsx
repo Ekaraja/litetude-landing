@@ -11,7 +11,7 @@ const Hiw = () => {
         <section className="hiw__section">
             <h2>How Litétude works</h2>
             <Video />
-            {/* <div className="hiw__cards">
+            <div className="hiw__cards">
                 {hiw.map((card) => {
                     return (
                         <div key={card.id} className={`${card.className} hiw__card`}>
@@ -25,7 +25,7 @@ const Hiw = () => {
                         </div>
                     )
                 })}
-            </div> */}
+            </div>
         </section>
     )
 }
