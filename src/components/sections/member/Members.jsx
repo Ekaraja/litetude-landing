@@ -12,8 +12,8 @@ const Members = () => {
 					return (
 						<div key={member.id} className="member">
 							<img className="member__avatar" src={member.avatar} alt={member.title} />
-							<p className="member__title">{member.title}</p>
-							<p className="member__occupy">{member.occupy}</p>
+							<h6 className="member__title">{member.title}</h6>
+							<h5 className="member__occupy">{member.occupy}</h5>
 						</div>
 					)
 				})}

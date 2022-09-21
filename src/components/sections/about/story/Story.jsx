@@ -7,15 +7,17 @@ import './story.css'
 const Story = () => {
     return (
         <section className="story__section">
-            {founders.map((founder) => {
-                return (
-                    <div key={founder.id} className="member">
-                        <img className="member__avatar" src={founder.avatar} alt={founder.title} />
-                        <p className="member__title">{founder.title}</p>
-                        <p className="member__occupy">{founder.occupy}</p>
-                    </div>
-                )
-            })}
+            <div className="founders">
+                {founders.map((founder) => {
+                    return (
+                        <div key={founder.id} className="member">
+                            <img className="member__avatar" src={founder.avatar} alt={founder.title} />
+                            <p className="member__title">{founder.title}</p>
+                            <p className="member__occupy">{founder.occupy}</p>
+                        </div>
+                    )
+                })}
+            </div>
             <div className="content">
                 <h3>Founder Story</h3>
                 <p>

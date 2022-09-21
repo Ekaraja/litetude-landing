@@ -6,11 +6,22 @@
 
 }
 
+.video__container::before {
+    top: -30rem;
+    left: -19.8rem;
+    position: absolute;
+    content: url('../../../../assets/images/headphone.svg')
+}
+
 .video {
     width: 100%;
     object-fit: fill;
     border-radius: 10px;
+    position: relative;
+    overflow: visible;
 }
+
+
 
 .controls {
     display: none;

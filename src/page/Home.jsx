@@ -23,9 +23,9 @@ const Home = () => {
 				<div className="right">
 					<Hero />
 					<Feature />
-					<Hiw />
+					{/* <Hiw /> */}
 					<About />
-					<Members />
+					<Members /> 
 					<Subscribe />
 				</div>
 			</div>

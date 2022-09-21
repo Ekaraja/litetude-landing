@@ -2,6 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background: lightpink;
+    flex-wrap: wrap;
+}
+
+.founders {
+    background: lightgreen;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content {

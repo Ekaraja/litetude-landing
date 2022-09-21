@@ -1,27 +1,24 @@
 .header__section {
     background: #f3f8fc;
+    border: 1px solid green;
     border-radius: 24px;
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center; */
     display: flex;
-    align-items: center;
-    flex-grow: 2;
-    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
 .header__desc {
-    font-size: var(--body-L);
-    line-height: 150%;
-    padding-right: 32px;
+    font-size: var(--body-M);
+    line-height: 2rem;
 }
 
 .content__left {
     position: relative;
-    border: 2px solid black;
-    padding: 0 0 0 50px;
-    width: 620px;
+    border: 2px solid rgb(255, 0, 0);
+    min-width: 650px;
+    max-width: 50%;
+    padding: 2rem;
 }
 
 
@@ -48,21 +45,33 @@
     color: #FFF;
     background: #54DCC2;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.12);
+    position: relative;
 }
+
+.student-login__btn::after {
+content: url("../../../assets/images/Illustration3.svg");
+position: absolute;
+bottom: 0;
+transform: translateX(5rem);
+}
+
+
 
 .content__right {
     display: flex;
-    min-height: 760px;
     height: 100%;
     border: 2px sienna solid;
-    width: 100%;
+    width: 40%;
     padding: 0;
+    justify-content: end;
     align-items: end;
+    align-self: flex-end;
 }
 
-.hero {
-    width: 100%;
+.hero__img {
+    width: 90%;
     /* height: auto; */
     object-fit: cover;
     border: 1px solid green;
+    /* min-width: 200px; */
 }

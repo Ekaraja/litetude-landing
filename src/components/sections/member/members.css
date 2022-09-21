@@ -1,6 +1,10 @@
 .members {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
+    background: red;
+    justify-content: center;
 }
 
 .member {
@@ -10,13 +14,12 @@
     justify-content: center;
 }
 
-.member p:nth-child(2) {
+.member h6 {
     color: #3C4143;
     font-size: 24px;
     font-weight: 500;
-    line-height: 150%;
 }
-.member p:nth-child(3) {
+.member h5 {
     color: rgba(105, 107, 107, 0.5);
-    line-height: 150%;
+    font-size: 1rem;
 }

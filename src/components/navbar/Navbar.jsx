@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Search from '../search/Search'
-import logo from "../../assets/images/logo.svg"
+import logo from "../../assets/images/logo.png"
 import menuBurger from "../../assets/icons/Icon-burger.svg"
 
 
@@ -15,7 +15,7 @@ const Navbar = (props) => {
                 <button className="icon__btn" onClick={() => props.setOpenSidebar(!props.openSidebar)}>
                     <img src={menuBurger} alt="Menu Burger Icon" />
                 </button>
-                <img src={logo} alt="Litétude Logo"/>
+                <img src={logo} className="logo" alt="Litétude Logo"/>
             </div>
             <div className="nav__right">
                 <Search />

@@ -1,5 +1,20 @@
 .mission__section {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    background-color: blue;
+    flex-wrap: wrap;
+    max-width: 90vw;
+}
+
+.mission__content {
+    width: 50%;
+    background: lightblue;
+    padding: 2rem;
+}
+
+.mission__illustration {
+    min-width: 500px;
+width: 700px;
+    max-width: 50%;
 }

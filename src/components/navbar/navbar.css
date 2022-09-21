@@ -5,6 +5,10 @@
     padding: 32px 45px;
 }
 
+.logo {
+    width: 100%;
+}
+
 .nav__left {
     display: flex;
 }

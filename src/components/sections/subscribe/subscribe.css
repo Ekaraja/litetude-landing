@@ -4,7 +4,6 @@
 
 .subscribe {
     width: 70%;
-    padding: 94px 135px;
     background: #FFFFFF;
     border-radius: 12px;
     margin-inline: auto;
@@ -51,6 +50,7 @@
     color: #696B6B;
     opacity: 0.6;
     padding-left: 32px;
+    width: 70%;
 }
 
 .subscribe__button {

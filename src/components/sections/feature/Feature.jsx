@@ -6,7 +6,7 @@ import './feature.css'
 
 const Feature = () => {
     return (
-        <section className="feature__section  container">
+        <section className="feature__section">
             <h2>Featured Videos</h2>
             <div className="features">
                 {features.map((feature) => {
