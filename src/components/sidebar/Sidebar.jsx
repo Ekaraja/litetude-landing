@@ -5,6 +5,7 @@ import { ReactComponent as SmsIcon } from "../../assets/icons/Icon-Sms.svg"
 import { ReactComponent as UsersIcon } from "../../assets/icons/Icon-Users.svg"
 import avatar from "../../assets/images/avatar2.svg"
 
+import { sidebarMenu } from '../../utils/sidebar'
 
 import './sidebar.css'
 
@@ -13,29 +14,20 @@ const Sidebar = () => {
 	return (
 		<div className='sidebar'>
 			<ul className="sidebar__menu">
-				<li>
-					<HomeIcon className="sidebar__icon" />
-					<span>Home</span>
-				</li>
-				<li>
-					<SettingIcon className="sidebar__icon" />
-					<span>How it works</span>
-				</li>
-				<li>
-
-					<SmsIcon className="sidebar__icon" />
-					<span>About Litetude</span>
-				</li>
-				<li>
-					<UsersIcon className="sidebar__icon" />
-					<span>Contact us</span>
-				</li>
+				{sidebarMenu.map((menu) => {
+					return (
+						<li key={menu.id}>
+							<img className="sidebar__icon" src={menu.icon} alt={menu.alt} />
+							<span>{menu.title}</span>
+						</li>
+					)
+				})}
 			</ul>
+
 			<hr />
 
 			<div className="subcription">
 				<p>Subcriptions</p>
-
 				<div className="subscription__info">
 					<div className="avatar">
 						<img src={avatar} alt="Avatar" />

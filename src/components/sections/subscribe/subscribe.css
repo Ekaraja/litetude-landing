@@ -1,3 +1,7 @@
+.subscribe__section {
+    padding: 100px;
+}
+
 .subscribe {
     width: 70%;
     padding: 94px 135px;
@@ -16,16 +20,16 @@
 
 .subscribe::before {
     content: "";
-    /* clip-path: polygon(0 0, 95.2% 8.5%, 100% 100%, 4.8% 91.4%); */
     background: rgb(217, 217, 217, 0.2);
     position: absolute;
-    width: 110%;
-    height: 120%;
-    top: -10%;
-    left: -5%;
+    width: 106%;
+    height: 110%;
+    top: -5%;
+    left: -3%;
     z-index: -1;
     border-radius: 40px;
-     clip-path: polygon(0 0, 95.1% 8.8%, 100% 100%, 4.9% 91.2%);
+     /* clip-path: polygon(0 0, 95.1% 8.8%, 100% 100%, 4.9% 91.2%); */
+     transform: skew(5deg, 2deg);
 }
 
 

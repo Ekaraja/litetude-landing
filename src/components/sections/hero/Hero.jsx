@@ -6,8 +6,8 @@ import './hero.css'
 
 const Hero = () => {
 	return (
-		<header>
-			<div className="container header__section">
+		<header className="container">
+			<div className="header__section">
 				<div className="content__left">
 					<h1>Are You Ready To Get Lit?</h1>
 					<p className="header__desc">

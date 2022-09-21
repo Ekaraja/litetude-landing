@@ -1,0 +1,46 @@
+.video__container {
+    margin-inline: auto;
+    position: relative;
+    width: 70%;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.video {
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.controls {
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    padding: 14px;
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    transition: all 0.5s ease-in-out;
+}
+.video__container:hover .controls {
+    display: flex;
+}
+
+
+.play__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video__progress {
+ width: 90%;
+}
+

@@ -6,14 +6,14 @@ import './feature.css'
 
 const Feature = () => {
     return (
-        <div className="feature__section  container">
+        <section className="feature__section  container">
             <h2>Featured Videos</h2>
             <div className="features">
                 {features.map((feature) => {
                     return <Card key={feature.id} feature={feature} />
                 })}
             </div>
-        </div>
+        </section>
     )
 }
 
