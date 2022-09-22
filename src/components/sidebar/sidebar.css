@@ -1,6 +1,12 @@
 .sidebar {
     height: 100%;
     width: 282px;
+    padding-top: 7rem;
+    box-shadow: -13px 0px 81px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar__content {
+    position: fixed;
 }
 
 .sidebar__menu {
@@ -12,6 +18,17 @@
     font-weight: var(--fw-regular);
     line-height: var(--body-lh-S);
     color: var(--description-color);
+}
+
+.sidebar__menu a{
+    color: inherit;
+    text-decoration: none;
+}
+
+hr {
+    width: 85%;
+    border: 0; 
+    border-top: .5px solid #696b6b48;;
 }
 
 .sidebar__menu li {
@@ -39,7 +56,7 @@
 .subcription {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 1.5rem;
     padding: 20px 40px;
 }
 

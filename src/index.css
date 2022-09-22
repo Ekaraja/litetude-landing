@@ -8,6 +8,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-family);
   width: 100%;
@@ -25,13 +29,13 @@ body {
   --fw-bold: 700;
 
   --header-XL: 64px;
-  --header-L: 60px;
+  --header-L: calc(1rem + 2vw);
   --header-M: 50px;
   --header-S: 36px;
   --header-XS: 1.5rem;
 
   --body-L: 22px;
-  --body-M: 20px;
+  --body-M: calc(.8rem + .4vw);
   --body-S: 16px;
 
   --body-lh-L: 32px;
@@ -119,13 +123,13 @@ input {
 }
 
 section {
-  margin-bottom: 100px;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
   font-size: var(--header-XL);
   font-weight: var(--fw-semiBold);
-  line-height: 71px;
+  line-height: calc(2rem + 2vw);
   color: #195e8c;
 }
 

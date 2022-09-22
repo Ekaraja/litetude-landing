@@ -1,20 +1,24 @@
 .story__section {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background: lightpink;
-    flex-wrap: wrap;
+    justify-content: center;
+flex-wrap: wrap;
 }
 
 .founders {
-    background: lightgreen;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-shrink: 1;
+}
+
+.content__wrapper {
+    flex-basis: 470px;
+    flex-grow: 1;
 }
 
 .content {
-    max-width: 35%;
+    width: 100%;
+    padding: 3rem;
 }
 
 .content p {

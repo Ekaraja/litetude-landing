@@ -1,20 +1,19 @@
 .mission__section {
+    padding: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blue;
     flex-wrap: wrap;
     max-width: 90vw;
 }
 
 .mission__content {
-    width: 50%;
-    background: lightblue;
     padding: 2rem;
+    flex-basis: 470px;
+    flex-grow: 1;
 }
 
 .mission__illustration {
-    min-width: 500px;
-width: 700px;
-    max-width: 50%;
+    width: 50%;
+    max-width: 50vw;
 }

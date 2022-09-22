@@ -1,6 +1,7 @@
 import React from 'react'
 import { features } from '../../../utils/features'
 import Card from '../../card/Card'
+import rightArrow from '../../../assets/icons/right-arrow.svg'
 
 import './feature.css'
 
@@ -13,6 +14,7 @@ const Feature = () => {
                     return <Card key={feature.id} feature={feature} />
                 })}
             </div>
+            <button className="action--btn --videos-btn">View All Videosㅤ<img src={rightArrow} alt="View all" /></button>
         </section>
     )
 }

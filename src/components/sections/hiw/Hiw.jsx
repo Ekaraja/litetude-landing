@@ -8,7 +8,7 @@ import './hiw.css'
 import Video from './video/Video'
 const Hiw = () => {
     return (
-        <section className="hiw__section">
+        <section className="hiw__section" id='hiw'>
             <h2>How Litétude works</h2>
             <Video />
             <div className="hiw__cards">

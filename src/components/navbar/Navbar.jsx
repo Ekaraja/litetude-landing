@@ -1,21 +1,23 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Search from '../search/Search'
 import logo from "../../assets/images/logo.png"
 import menuBurger from "../../assets/icons/Icon-burger.svg"
 
+import { useScrollPosition } from '../../utils/hooks/useScrollPosition'
 
 import './navbar.css'
 
 const Navbar = (props) => {
 
+    const scrollPosition = useScrollPosition();
 
     return (
-        <nav className='navbar'>
+        <nav className={`navbar ${scrollPosition? '--shadow' : null}`}>
             <div className="nav__left">
                 <button className="icon__btn" onClick={() => props.setOpenSidebar(!props.openSidebar)}>
                     <img src={menuBurger} alt="Menu Burger Icon" />
                 </button>
-                <img src={logo} className="logo" alt="Litétude Logo"/>
+                <img src={logo} className="nav__logo" alt="Litétude Logo"/>
             </div>
             <div className="nav__right">
                 <Search />

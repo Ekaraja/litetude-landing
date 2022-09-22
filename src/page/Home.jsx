@@ -16,20 +16,23 @@ const Home = () => {
 	return (
 		<>
 			<Navbar openSidebar={openSidebar} setOpenSidebar={setOpenSidebar} />
-			<div className='home__page'>
+			<div className='home__page' id='home'>
 				<div className="left">
 					{openSidebar && <Sidebar />}
 				</div>
-				<div className="right">
-					<Hero />
-					<Feature />
-					<Hiw />
-					<About />
-					<Members /> 
-					<Subscribe />
+				<div className="main">
+					<div className="main__content">
+						<Hero />
+						<Feature />
+						<Hiw />
+						<About />
+						<Members />
+						<Subscribe />
+					</div>
+					<Footer />
 				</div>
 			</div>
-			<Footer />
+			
 		</>
 	)
 }

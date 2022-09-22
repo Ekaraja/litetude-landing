@@ -1,13 +1,27 @@
 .feature__section {
-    background: rgb(228, 227, 227);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
 }
 
 .features {
-    border: 2px solid brown;
+    padding: 3rem 0 5rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-flow: dense;
+    justify-content: space-between;
     gap: 1.25rem;
+}
+
+.--videos-btn {
+    background: transparent;
+    color: #0080BF;
+    border: 2px solid #0080BF;
+    align-self: center;
+    transition: background-color .2s ease-out;
+}
+
+.--videos-btn:hover {
+    background-color: #eee;
 }
 
 

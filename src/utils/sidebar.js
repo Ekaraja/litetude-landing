@@ -10,27 +10,27 @@ export const sidebarMenu = [
         title: "Home",
         icon: homeIcon,
         alt: "Home Icon",
-        url: "" // FOR ROUTE
+        url: "#home" // FOR ROUTE
     },
     {
         id: 2,
         title: "How it works",
         icon: settingIcon,
         alt: "Setting Icon",
-        url: "" // FOR ROUTE
+        url: "#hiw" // FOR ROUTE
     },
     {
         id: 3,
         title: "About Litetude",
         icon: usersIcon,
         alt: "Users Icon",
-        url: "" // FOR ROUTE
+        url: "#about" // FOR ROUTE
     },
     {
         id: 4,
         title: "Contact us",
         icon: smsIcon,
         alt: "Letter Icon",
-        url: "" // FOR ROUTE
+        url: "#contact" // FOR ROUTE
     },
 ]

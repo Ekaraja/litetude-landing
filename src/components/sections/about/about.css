@@ -1,0 +1,11 @@
+.about__section {
+display: flex;
+flex-direction: column;
+padding: 5rem 0;
+}
+
+.about__intro {
+    width: 23rem;
+    text-align: center;
+    align-self: center;
+}

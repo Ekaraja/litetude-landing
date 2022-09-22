@@ -1,24 +1,28 @@
 .header__section {
     background: #f3f8fc;
-    border: 1px solid green;
     border-radius: 24px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 
 .header__desc {
     font-size: var(--body-M);
-    line-height: 2rem;
+    color: #0080BF;
+    padding: 1rem 0;
 }
 
 .content__left {
+    display: flex;
     position: relative;
-    border: 2px solid rgb(255, 0, 0);
-    min-width: 650px;
-    max-width: 50%;
-    padding: 2rem;
+    align-items: center;
+    min-width: 400px;
+    width: 60vw;
+    padding: 2rem 2vw;
+}
+
+.content__left h1 {
+font-size: calc(1rem + 2vw);
 }
 
 
@@ -30,8 +34,8 @@
 
 .buttons {
     display: flex;
-    gap: 36px;
-    margin-top: 60px;
+    gap: 2vw;
+    white-space: nowrap;
 }
 
 .teacher-login__btn {
@@ -60,18 +64,36 @@ transform: translateX(5rem);
 .content__right {
     display: flex;
     height: 100%;
-    border: 2px sienna solid;
-    width: 40%;
     padding: 0;
-    justify-content: end;
-    align-items: end;
     align-self: flex-end;
+    /* background: orange; */
 }
 
+
+
 .hero__img {
-    width: 90%;
-    /* height: auto; */
+    /* width: clamp(40vw, 100%, 70vw); */
+    width: 100%;
     object-fit: cover;
-    border: 1px solid green;
-    /* min-width: 200px; */
 }
+
+
+@media only screen and (max-width: 1090px) {
+
+    .content__right {
+        justify-content: center;
+    }
+
+    .content__left {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header__section {
+        flex-wrap: wrap;
+    }
+
+    .hero__img {
+        width: 70%;
+    }
+  }
